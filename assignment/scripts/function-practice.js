@@ -14,9 +14,11 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!' 
+
 function helloName(name) {
   console.log('Hello,', name)
 };
+
 // Remember to call the function to test
 
 
@@ -24,6 +26,7 @@ function helloName(name) {
 function addNumbers(firstNumber, secondNumber) {
   console.log('The sum of', firstNumber, ' and ', secondNumber, ' is');
   return firstNumber + secondNumber;
+  
   // return firstNumber + secondNumber;
 }
 
@@ -57,11 +60,13 @@ function getLast(array) {
 
 // variable called nums with a array of numbers used for
 // the find function
+
 let nums = [2, 6, 9, 34, 12]
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 function find(value, Arrray) {
   for (let i = 0; i < Arrray.length; i++) {
     if (Arrray[i] == value) {
@@ -78,6 +83,7 @@ function find(value, Arrray) {
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
+
 function isFirstLetter(letter, string) {
   for (let each of string)
     if (letter === each) {
@@ -88,8 +94,10 @@ function isFirstLetter(letter, string) {
     }
 }
 
-// 9. Function to return the sum of all numbers in an array
+//variable sumOf to be used in the sumAll function
 let sumOf = [1, 4, 7, 23, 43, 54]
+
+// 9. Function to return the sum of all numbers in an array
 function sumAll(sumArray) {
   let sum = 0
   for (let i = 0; i < sumArray.length; i++) {
@@ -126,6 +134,7 @@ function positiveNumbers(positives) {
 // another varieble that named the product of those two
 // and the value parameter multiplied together after
 // that I return the newly created variable
+
 function timeConversion(value) {
   const oneMinute = 60
   const hour = 60
