@@ -16,7 +16,7 @@ console.log('Test - should say "Hello World!"', hello());
 //    for example 'Hello, Jo!', or 'Hello, Stacy!' 
 
 function helloName(name) {
-  console.log('Hello,', name)
+  return 'Hello'+' '+ name;
 };
 
 // Remember to call the function to test
@@ -51,7 +51,7 @@ function isPositive(number) {
 let lastItem = ['pizza', 'ice cream']
 function getLast(array) {
   if (array.length > 0) {
-    return array.pop();
+    return array[array.length-1];
   }
   else {
     return undefined;
